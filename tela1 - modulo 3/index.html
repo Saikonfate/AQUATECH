@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-dark-grey w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-red" onclick="closeSidebar()">× Fechar</button>
+        <a href="../tela1/index.html" class="w3-bar-item w3-button">
+            <img src="../img/telainicial-icon.svg" alt="Home" class="menu-icon"> Tela Inicial
+        </a>
+        <a href="../tela3/index.html" class="w3-bar-item w3-button">
+            <img src="../img/etapas-icon.svg" alt="Etapas" class="menu-icon"> Atuatores
+        </a>
+        <a href="../tela4/index.html" class="w3-bar-item w3-button">
+            <img src="../img/grafico-icon.svg" alt="Gráficos" class="menu-icon"> Alertas
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main">
+        <header class="head">
+            <button class="w3-button w3-blue w3-xlarge" onclick="openSidebar()">☰</button>
+            <h1 class="title">AQUATECH</h1>
+            <div class="input-container"> 
+                <img src="../img/search-normal.svg" alt="Lupa">
+                <input type="text" class="pesquisa" placeholder="Pesquisar">
+            </div>
+            <div class="icon-container">
+                <button class="icon" title="Modo Noturno">
+                    <img src="../img/moon.svg" alt="Modo Noturno">
+                </button>
+                <button class="icon" title="Configurações">
+                    <img src="../img/setting-2.svg" alt="Configurações">
+                </button>
+                <button class="icon" title="Notificações">
+                    <img src="../img/notification.svg" alt="Notificações">
+                </button>
+                <button class="icon-logout" title="Sair">
+                    <img src="../img/back-square.svg" alt="Sair">
+                    <p>Sair</p>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="tanques" id="tanques">
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/reservatório base.svg" alt="imagem do reservatório">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque1.svg" alt="imagem do tanque 1">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <a href="../tela1 - modulo 1/index.html">
+                            <img src="../img/modulo1.svg" alt="imagem do modulo1">
+                        </a>
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque2.svg" alt="imagem do tanque 2">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <a href="../tela1 - modulo 2/index.html">
+                            <img src="../img/modulo2.svg" alt="imagem do modulo1">
+                        </a>
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque3.svg" alt="imagem do tanque 3">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque4.svg" alt="imagem do tanque 4">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <a href="../tela1 - modulo 3/index.html">
+                            <img src="../img/modulo3.svg" alt="imagem do modulo1">
+                        </a>
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque5.svg" alt="imagem do tanque 5">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque6.svg" alt="imagem do tanque 6">
+                    </figure>
+                </div>
+                <div class="button_add">
+                    <button class="add">+ADD</button>
+                </div>
+            </section>
+            <section class="Gráfico_Turbidez section2">
+                <div class="container">
+                    <div class="turbidez">
+                        <h2 class="title_turbidez">
+                            Turbidez
+                        </h2>
+                        <figure class="gráfico graphic_turbidez">
+                            <img src="../img/grafico-turbidez.svg" alt="Gráfico1 da turbidez">
+                        </figure>
+                        
+                    </div>
+                    <div class="Informações">
+                        <div class="text_inform">
+                            <h3 class="title_inform">
+                                Sensor de Turbidez
+                            </h3>
+                            <div class="text">
+                                <p>Função: Mede a turbidez da água ao detectar a luz dispersa por partículas suspensas.<br>
+                                    Especificações: Modelo ST 100, tensão de 5V, tempo de resposta menor que 500ms.</p>
+                            </div>
+                            
+                        </div>
+                        
+
+                        <div class="text_inform2">
+                            <h3 class="title_inform2">
+                                Sensor de Turbidez: Operando corretamente. 
+                            </h3>
+                            <div class="text2">
+                                <p>Valor atual: 3 NTU (nebulosidade ligeiramente acima do ideal, ajuste de coagulante necessário). </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </section>
+            <hr class="linha">
+            <section class="Gráfico_oxigenio section2">
+                <div class="container">
+                    <div class="oxigenio">
+                        <h2 class="title_oxigenio">
+                            Sensor de Oxigênio Dissolvido
+                        </h2>
+                        <figure class="gráfico graphic_oxigenio">
+                            <img src="../img/grafico-oxigenio-na-agua.svg" alt="Gráfico1 da oxigenio">
+                        </figure>
+                        
+                    </div>
+                    <div class="Informações">
+                        <div class="text_inform">
+                            <h3 class="title_inform">
+                                Solubilidade de Oxigênio na Água
+                            </h3>
+                            <div class="text">
+                                <p>Função: Monitora a concentração de oxigênio dissolvido.<br>
+                                    Faixa: 0 a 20 mg/L, variando conforme temperatura e pressão.
+                                    Temperatura ideal: 20°C, com saturação de 9 mg/L a 1 atm</p>
+                                    
+                            </div>
+                        </div>
+                        <div class="text_inform2">
+                            <h3 class="title_inform2">
+                                Sensor de Oxigênio Dissolvido (DO): Operando corretamente. 
+                            </h3>
+                            <div class="text2">
+                                <p>Valor atual: 8,1 mg/L (nível adequado, sem comprometimento durante a filtração).. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <hr class="linha">
+            <section class="Gráfico_agua section3">
+                <div class="container">
+                    <div class="agua">
+                        <h2 class="title_agua">
+                            Nível de Água
+                        </h2>
+                        <figure class="gráfico graphic_agua">
+                            <img src="../img/grafico-nivel-de-agua.svg" alt="Gráfico do nivel de agua">
+                        </figure>
+                    </div>
+                    <div class="Informações">
+                        <div class="text_inform">
+                            <h3 class="title_inform">
+                                Sensor de Nível de Água
+                            </h3>
+                            <div class="text">
+                                <p>Modelo comum: XY-L83
+                                    Tipo de sensor: Resistivo (mede o nível de água com base na condutividade elétrica).<br>
+                                    Material: Placa PCB revestida para evitar oxidação (alguns modelos têm proteção contra corrosão limitada).<br>
+                                    <br></p>
+                            </div>
+                        </div>
+                        <div class="text_inform2">
+                            <h3 class="title_inform2">
+                                Sensor de Nível de Água: Operando corretamente. 
+                            
+                            <div class="text2">
+                                <p>Nível atual: 80% da capacidade (estável).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+          <!--Coloca o conteúdo pricipal aqui dentro, não me pede pra explicar esse código
+          tem tudo no w3c, se ficar muito complicado a gente pode só usar a sidebar normal
+          Obs: Ajustar os posicionamentos do header e responsividade, tô com sono demais pra isso.-->
+        </main>
+    </div>
+
+
+</body>
+
+</html>

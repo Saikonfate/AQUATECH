@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-dark-grey w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-red" onclick="closeSidebar()">× Fechar</button>
+        <a href="../tela1/index.html" class="w3-bar-item w3-button">
+            <img src="../img/telainicial-icon.svg" alt="Home" class="menu-icon"> Tela Inicial
+        </a>
+        <a href="../tela3/index.html" class="w3-bar-item w3-button">
+            <img src="../img/etapas-icon.svg" alt="Etapas" class="menu-icon"> Atuatores
+        </a>
+        <a href="../tela4/index.html" class="w3-bar-item w3-button">
+            <img src="../img/grafico-icon.svg" alt="Gráficos" class="menu-icon"> Alertas
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main">
+        <header class="head">
+            <button class="w3-button w3-blue w3-xlarge" onclick="openSidebar()">☰</button>
+            <h1 class="title">AQUATECH</h1>
+            <div class="input-container"> 
+                <img src="../img/search-normal.svg" alt="Lupa">
+                <input type="text" class="pesquisa" placeholder="Pesquisar">
+            </div>
+            <div class="icon-container">
+                <button class="icon" title="Modo Noturno">
+                    <img src="../img/moon.svg" alt="Modo Noturno">
+                </button>
+                <button class="icon" title="Configurações">
+                    <img src="../img/setting-2.svg" alt="Configurações">
+                </button>
+                <button class="icon" title="Notificações">
+                    <img src="../img/notification.svg" alt="Notificações">
+                </button>
+                <button class="icon-logout" title="Sair">
+                    <img src="../img/back-square.svg" alt="Sair">
+                    <p>Sair</p>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="tanques" id="tanques">
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/reservatório base.svg" alt="imagem do reservatório">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque1.svg" alt="imagem do tanque 1">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <a href="../tela1 - modulo 1/index.html">
+                            <img src="../img/modulo1.svg" alt="imagem do modulo1">
+                        </a>
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque2.svg" alt="imagem do tanque 2">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <a href="../tela1 - modulo 2/index.html">
+                            <img src="../img/modulo2.svg" alt="imagem do modulo1">
+                        </a>
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque3.svg" alt="imagem do tanque 3">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque4.svg" alt="imagem do tanque 4">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <a href="../tela1 - modulo 3/index.html">
+                            <img src="../img/modulo3.svg" alt="imagem do modulo1">
+                        </a>
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque5.svg" alt="imagem do tanque 5">
+                    </figure>
+                </div>
+                <div class="tanque-itens">
+                    <figure class="card">
+                        <img src="../img/tanque6.svg" alt="imagem do tanque 6">
+                    </figure>
+                </div>
+                <div class="button_add">
+                    <button class="add">+ADD</button>
+                </div>
+            </section>

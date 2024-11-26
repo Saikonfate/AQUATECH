@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-dark-grey w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-red" onclick="closeSidebar()">× Fechar</button>
+        <a href="../tela1/index.html" class="w3-bar-item w3-button">
+            <img src="../img/telainicial-icon.svg" alt="Home" class="menu-icon"> Tela Inicial
+        </a>
+        <a href="../tela3/index.html" class="w3-bar-item w3-button">
+            <img src="../img/etapas-icon.svg" alt="Etapas" class="menu-icon"> Atuatores
+        </a>
+        <a href="../tela4/index.html" class="w3-bar-item w3-button">
+            <img src="../img/grafico-icon.svg" alt="Gráficos" class="menu-icon"> Alertas
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main">
+        <header class="head">
+            <button class="w3-button w3-blue w3-xlarge" onclick="openSidebar()">☰</button>
+            <h1 class="title">AQUATECH</h1>
+            <div class="input-container"> 
+                <img src="../img/search-normal.svg" alt="Lupa">
+                <input type="text" class="pesquisa" placeholder="Pesquisar">
+            </div>
+            <div class="icon-container">
+                <button class="icon" title="Modo Noturno">
+                    <img src="../img/moon.svg" alt="Modo Noturno">
+                </button>
+                <button class="icon" title="Configurações">
+                    <img src="../img/setting-2.svg" alt="Configurações">
+                </button>
+                <button class="icon" title="Notificações">
+                    <img src="../img/notification.svg" alt="Notificações">
+                </button>
+                <button class="icon-logout" title="Sair">
+                    <img src="../img/back-square.svg" alt="Sair">
+                    <p>Sair</p>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <h1 class="title_tela3">
+                Atuadores
+            </h1>
+            <section class="Elementos">
+                <h3 class="title_container">
+                    Bomba Peristáltica
+                </h3>
+                <div class="container">
+                    <div class="corpo_text">
+                        <h3 class="title_text">
+                            Informações:
+                        </h3>
+                        <div class="text">
+                            <p>Tensão de Operação: 12V DC <br>
+                            Corrente Máxima: 200 m br<br>
+                            Fluxo de Vazão: 0,5 a 100 mL/min (dependendo da configuração e da tubulação)<br>
+                            Material do Corpo: Plástico ABS<br>
+                            Material do Tubo: Silicone alimentar (resistente a químicos leves)<br>
+                            Tipo de Controle:PWM (para ajustar a velocidade do motor).<br>
+                            Ligação direta via relé ou MOSFET para simples Liga/Desliga.<br>
+                            Compatibilidade com Líquidos: Água, soluções químicas leves (não corrosivas).<br>
+                            Conexões Elétricas:Fios para ligação simples ao driver de controle.<br>
+                            Dimensões: Compacta, geralmente menor que 10 cm (ideal para projetos embarcados).</p>
+                        </div>
+                    </div>
+                    <div class="corpo_text2">
+                        <h3 class="title_text">
+                            Status:
+                        </h3>
+                        <div class="text">
+                            <p>Estado operacional: Operando normalmente, acionada pelo arduíno;
+                            Temperatura do motor: estável</p>
+                            
+                            <p>Sem anomalias, Operação fluída e sem vazamentos.
+                            ⁠0/9 bombas com anomalias ou inconsistências.  </p>                          
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="linha">
+            <section class="Elementos">
+                <h3 class="title_container">
+                    Resfriador
+                </h3>
+                <div class="container">
+                    <div class="corpo_text">
+                        <h3 class="title_text">
+                            Informações:
+                        </h3>
+                        <div class="text">
+                            <p> Módulo Peltier: TEC1-12706 (72W, 12V, 6A). <br>
+                                Dissipador e ventoinha: Dissipador de alumínio com ventoinha de 12V/1A.<br>
+                                Driver: Módulo MOSFET IRF520.<br>
+                                Sensor: DS18B20 para monitorar a temperatura da água.<br>
+                                Fonte: 12V, 10A para alimentar o Peltier e a ventoinha<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="corpo_text2">
+                        <h3 class="title_text">
+                            Status:
+                        </h3>
+                        <div class="text">
+                            <p>
+                                Operando normalmente nos reservatórios <br>
+                                0/2 resfriadores com anomalias ou inconsistências</p><br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="linha">
+            <section class="Elementos">
+                <h3 class="title_container">
+                    Aquecedor
+                </h3>
+                <div class="container">
+                    <div class="corpo_text">
+                        <h3 class="title_text">
+                            Informações:
+                        </h3>
+                        <div class="text">
+                            <p>
+                                Modelo: Aquecedor Submersível de 12V/100W.<br>
+                                Tensão: 12V DC.<br>
+                                Corrente: 8,3A.<br>
+                                Material: Aço inoxidável, revestimento impermeável (IP68).<br>
+                                Faixa de Temperatura: Até 70°C.<br>
+                                Dimensões: 20 cm de comprimento x 2 cm de diâmetro.<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="corpo_text2">
+                        <h3 class="title_text">
+                            Status:
+                        </h3>
+                        <div class="text">
+                            <p>
+                                Operando normalmente nos reservatórios.<br>
+                                0/2 aquecedores com anomalias ou inconsistências.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="linha">
+            <section class="Gráfico_uso section">
+                <div class="container">
+                    <h3 class="title_container">
+                        Gráficos de uso
+                    </h3>
+                    
+                  <figure class="gráfico">
+                    <img src="../img/grafico-de-iso.svg" alt="Gráfico de uso">
+                  </figure>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+
+
+</body>
+
+</html>

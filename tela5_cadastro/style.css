@@ -1,0 +1,138 @@
+body {
+    background-color: #222831;
+    color: #FFFFFF;
+    font-family: "Inter", serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Seção principal */
+.login {
+    background-color: #131627;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Estilo do título */
+.title_aquatech {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title_aquatech h1 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #00C6C3;
+}
+
+/* Entrar */
+.entrar {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grupo de inputs */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 30px 1px 10px;
+    background-color: #131627;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #00C6C3;
+    box-shadow: 0 0 5px rgba(0, 198, 195, 0.3);
+}
+
+.input-group label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 16px;
+    color: #AAAAAA;
+    pointer-events: none;
+    transition: all 0.3s ease; 
+    background-color: #131627; 
+    padding: 0 5px;
+}
+
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: 5px;
+    font-size: 12px;
+}
+
+/* Esqueceu a senha */
+.esqueceu a {
+    display: block;
+    text-align: left;
+    color: #00C6C3;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.esqueceu a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de entrar */
+.button_entrar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00C6C3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button_entrar button:hover {
+    background-color: #009a9a;
+}
+
+/* Suporte */
+.suporte {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.suporte a {
+    color: #00C6C3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.suporte a:hover {
+    text-decoration: underline;
+}
+
+.suporte .relatar .texto {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    text-align: justify;
+}
